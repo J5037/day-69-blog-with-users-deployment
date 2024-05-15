@@ -43,7 +43,7 @@
             {{ ckeditor.load() }}
             {{ ckeditor.config(name='comment_text') }}
             {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
-          <!-- TODO: Show all the comments on a post -->
+          <!-- TO_DO: Show all the comments on a post -->
           <ul class="commentList">
               {% for comment in post.comments  %}
             <li>

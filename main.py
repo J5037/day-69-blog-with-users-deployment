@@ -151,7 +151,7 @@ def get_all_posts():
     return render_template("index.html", all_posts=posts)
 
 
-# TODO: Allow logged-in users to comment on posts
+# TO_DO: Allow logged-in users to comment on posts
 
 @app.route("/post/<int:post_id>", methods=['GET', 'POST'])
 # @login_required
